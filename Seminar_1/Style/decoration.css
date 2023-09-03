@@ -76,3 +76,16 @@ input {
 body {
     font-family: sans-serif;
 }
+
+div {
+    margin: 20px;
+    padding: 20px;
+}
+
+.link1:hover {
+    color: bisque;
+}
+
+.link1:active {
+    color: aquamarine;
+}
