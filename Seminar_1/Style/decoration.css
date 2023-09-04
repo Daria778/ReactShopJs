@@ -82,6 +82,11 @@ div {
     padding: 20px;
 }
 
+div p {
+    font-family: Draculya;
+    font-size: 40px;
+}
+
 .link1:hover {
     color: bisque;
 }
