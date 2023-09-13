@@ -28,6 +28,7 @@ body {
     flex-shrink: 0;
 }
 
+
 .header__nav_menu {
     margin: 39px 755px 39px 771.5px;
     display: flex;
@@ -169,7 +170,7 @@ h4 {
 .items {
     display: grid;
     grid-template-columns: repeat(3, 30px);
-    margin: 969px 387px 956px 387px;
+    margin: 0px 387px 243px 387px;
     row-gap: 30px;
     column-gap: 30px;
     justify-content: space-around;
@@ -226,6 +227,17 @@ h6 {
     gap: 30px;
 }
 
+.alala {
+    width: 558px;
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    opacity: 0.7;
+}
+
 .big {
     width: 694px;
 }
@@ -239,4 +251,207 @@ h6 {
     font-style: normal;
     font-weight: 700;
     line-height: 125%;
+}
+
+h3 {
+    width: 484px;
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    padding-bottom: 30px;
+
+}
+
+.Apply {
+    width: 460px;
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    padding-bottom: 65px;
+    opacity: 0.7;
+}
+
+.apply_content {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 68px;
+    margin: 157px 387px 264px 387px;
+}
+
+.just_content {
+    width: 484px;
+    height: 314px;
+}
+
+.button_about {
+    display: inline-flex;
+    padding: 15px 30px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 5px;
+    background: var(--3-a-68-b-8, #3A68B8);
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.group_eee {
+    margin: 0px 386px 221px 388px;
+    display: flex;
+    width: 1146px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.text_end {
+    width: 548px;
+    height: 464px;
+    flex-shrink: 0;
+}
+
+.end_p {
+    width: 460px;
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    opacity: 0.7;
+    padding-bottom: 20px;
+}
+
+.end_h3 {
+    width: 548px;
+    padding-bottom: 40px;
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.end_end {
+    width: 1921px;
+    height: 250px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #05101d;
+    backdrop-filter: blur(100px);
+}
+
+.frame418 {
+    display: flex;
+    width: 1146px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 48px 387px 46.1px 388px;
+}
+
+.div_end {
+    width: 362px;
+    height: 155.889px;
+    flex-shrink: 0;
+    margin: 48px 170px 46.11px 391.82px;
+}
+
+.elden {
+    width: 261px;
+    color: var(--ffffff, #FFF);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 24px;
+}
+
+.div_end1 {
+    margin: 48px 170px 46.11px 0px;
+    width: 361.641px;
+    height: 100px;
+    flex-shrink: 0;
+}
+
+.sekiro {
+    width: 261px;
+    color: var(--ffffff, #FFF);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 100;
+    line-height: normal;
+    opacity: 0.6;
+}
+
+.div_end2 {
+    margin: 48px 387px 46.11px 0px;
+    width: 362px;
+    height: 109.25px;
+    flex-shrink: 0;
+}
+
+.srcsr {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    opacity: 0.6;
+    margin-top: 24px;
+}
+
+
+.talos {
+    width: 261px;
+    color: var(--ffffff, #FFF);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.h5q {
+    width: 209.042px;
+    color: var(--ffffff, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 33px;
+}
+
+.h5e {
+    width: 228.623px;
+    color: var(--ffffff, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 33px;
+}
+
+.h5i {
+    width: 228.851px;
+    color: var(--ffffff, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 33px;
 }
