@@ -29,7 +29,7 @@ body {
 }
 
 .header__nav_menu {
-    margin: 39px 755px 39px 1105px;
+    margin: 39px 755px 39px 771.5px;
     display: flex;
     flex-flow: row-reverse;
     place-content: center flex-start;
@@ -37,8 +37,8 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
-    justify-content: center;
-    gap: 120px;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .nav_menu__items {
@@ -164,4 +164,79 @@ h4 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 30px);
+    margin: 969px 387px 956px 387px;
+    row-gap: 30px;
+    column-gap: 30px;
+    justify-content: space-around;
+    align-items: start;
+    justify-items: center;
+    align-content: center;
+
+}
+
+
+h6 {
+    color: var(--ffffff, #FFF);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    width: 302px;
+}
+
+.ddd {
+    color: var(--ffffff, #FFF);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    width: 302px;
+}
+
+.cell {
+    width: 362px;
+    height: 389px;
+    flex-shrink: 0;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    border-radius: 10px;
+    background: #132035;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content4_big {
+    grid-column: span 2;
+    grid-row: span 2;
+    width: 754px;
+    height: 808px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #132035;
+    gap: 30px;
+}
+
+.big {
+    width: 694px;
+}
+
+.h6big {
+    width: 694px;
+    color: var(--ffffff, #FFF);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
 }
