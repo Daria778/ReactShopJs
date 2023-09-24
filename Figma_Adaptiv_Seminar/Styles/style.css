@@ -68,6 +68,40 @@ html {
     border: none;
 }
 
+.buts {
+    width: 169px;
+    height: 37px;
+    flex-shrink: 0;
+    display: flex;
+    gap: 25px;
+    margin-right: 0px;
+
+}
+
+.but1 {
+    width: 32px;
+    height: 23px;
+    flex-shrink: 0;
+    background: #222;
+    border: none;
+}
+
+.but2 {
+    width: 29px;
+    height: 29px;
+    flex-shrink: 0;
+    background: #222;
+    border: none;
+}
+
+.but3 {
+    width: 31.996px;
+    height: 29px;
+    flex-shrink: 0;
+    background: #222;
+    border: none;
+}
+
 .buttons1 {
     width: 26.002px;
     height: 26.792px;
@@ -385,6 +419,7 @@ html {
 
     .buttons {
         padding: 18px 424px 18px 32px;
+
     }
 
     .background {
@@ -458,5 +493,142 @@ html {
     .products {
         margin: 0px 16px 32.48px 16px;
         gap: 14px;
+    }
+
+    body {
+        width: 768px;
+        height: 2976px;
+    }
+}
+
+@media(min-width:320px) and (max-width:767px) {
+    html {
+        width: 375px;
+        height: 5367px;
+    }
+
+    .header {
+        width: 375px;
+        height: 74px;
+        display: flex;
+    }
+
+    .buttons {
+        padding: 18px 200px 18px 16px;
+        width: 110.999px;
+        height: 38px;
+        flex-shrink: 0;
+        gap: 41px;
+    }
+
+    .but1 {
+        margin: 25px 16px 26px 0px;
+        background: #222;
+        border: none;
+    }
+
+    .buts {
+        display: flex;
+        align-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .background {
+        flex-direction: row-reverse;
+        width: 375px;
+        height: 363px;
+        flex-shrink: 0;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .texts {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .text {
+        font-size: 38px;
+    }
+
+    .text1 {
+        font-size: 20px;
+    }
+
+    .text2 {
+        font-size: 20px;
+    }
+
+    .rectangle {
+        width: 12px;
+        height: 61px;
+        flex-shrink: 0;
+    }
+
+    .text0 {
+        width: 263px;
+        height: 66px;
+    }
+
+    .rect {
+        width: 343px;
+        height: 247px;
+    }
+
+    .groups {
+        margin: 64px 16px 64px 16px;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: auto;
+        height: auto;
+    }
+
+    .group37 {
+        width: 343px;
+        height: 247px;
+    }
+
+    .group38 {
+        width: 343px;
+        height: 247px;
+    }
+
+    .group39 {
+        width: 343px;
+        height: 247px;
+    }
+
+    .rectan {
+        width: 343.262px;
+        height: 111px;
+        flex-shrink: 0;
+    }
+
+    .group36 {
+        width: 343.262px;
+        height: 111px;
+        flex-shrink: 0;
+    }
+
+    .head {
+        margin: 0px 14px 64.7px 25px;
+    }
+
+    .products {
+        margin: 0px 8px 40.61px 8px;
+    }
+
+    .lastB {
+        margin: 0px 89px 85px 74px;
+    }
+
+    body {
+        width: 375px;
+        height: 5367px;
     }
 }
