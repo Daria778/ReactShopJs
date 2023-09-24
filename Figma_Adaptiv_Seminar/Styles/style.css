@@ -53,6 +53,21 @@ html {
     flex-shrink: 0;
 }
 
+.button2 {
+    background: url(../Images/Ellipse\ 2.png);
+    margin: 19px 32px 36px 0px;
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+}
+
 .buttons1 {
     width: 26.002px;
     height: 26.792px;
@@ -63,7 +78,7 @@ html {
 }
 
 .buttons2 {
-    padding: 26px 240px 20px 0px;
+    padding: 26px 0px 20px 0px;
     width: 158.996px;
     height: 29px;
     flex-shrink: 0;
@@ -296,12 +311,42 @@ html {
 }
 
 .img {
-    background: url(../Images/Rectangle\ 15\ copy.png);
+    background: url(../Images/Rectangle\ 15\ copy\ \(6\).png);
     width: 360px;
     display: flex;
     justify-content: center;
     height: 420px;
     flex-shrink: 0;
+}
+
+.y {
+    background: url(../Images/Rectangle\ 15\ copy\ \(5\).png);
+    width: 360px;
+    height: 420px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.z {
+    background: url(../Images/Rounded\ Rectangle\ 7.png);
+    width: 139px;
+    height: 44px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.i {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .head {
@@ -324,4 +369,94 @@ html {
     height: 48px;
     flex-shrink: 0;
     background: url(../Images/Rectangle\ 5.png);
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+    html {
+        width: 768px;
+        height: 2976px;
+    }
+
+    .header {
+        width: 768px;
+        height: 74px;
+        display: flex;
+    }
+
+    .buttons {
+        padding: 18px 424px 18px 32px;
+    }
+
+    .background {
+        width: 769.572px;
+        height: 367.567px;
+    }
+
+    .rectangle {
+        margin: 0px 16px 0px 39px;
+    }
+
+    .texts {
+        margin: 138.58px 33.57px 151.47px 0px;
+        justify-content: flex-start;
+    }
+
+    .text {
+        font-size: 44px;
+    }
+
+    .text1 {
+        font-size: 24px;
+    }
+
+    .text2 {
+        font-size: 24px;
+    }
+
+    .groups {
+        width: 735.999px;
+        height: 303.043px;
+        flex-shrink: 0;
+        margin: 64.95px 16px 109.92px 16px;
+        gap: 19.38px
+    }
+
+    .group37 {
+        width: 232.328px;
+        height: 167.617px;
+    }
+
+    .rect {
+        width: 231.973px;
+        height: 167.617px;
+    }
+
+    .group38 {
+        width: 232.328px;
+        height: 167.617px;
+    }
+
+    .group39 {
+        width: 232.328px;
+        height: 167.617px;
+    }
+
+    .group36 {
+        width: 734.581px;
+        height: 116.043px;
+    }
+
+    .rectan {
+        width: 734.581px;
+        height: 116.043px;
+    }
+
+    .head {
+        margin: 0px 216.33px 72.74px 215.67px;
+    }
+
+    .products {
+        margin: 0px 16px 32.48px 16px;
+        gap: 14px;
+    }
 }
