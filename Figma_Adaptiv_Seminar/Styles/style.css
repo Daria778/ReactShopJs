@@ -405,6 +405,226 @@ html {
     background: url(../Images/Rectangle\ 5.png);
 }
 
+footer {
+    width: 1600px;
+    height: 341px;
+    flex-shrink: 0;
+}
+
+.back {
+    width: 1600px;
+    height: 341px;
+    flex-shrink: 0;
+    background: #222224;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textmini {
+    width: 360px;
+    height: 134.004px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textmini1 {
+    width: 360px;
+    height: 133.003px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textmini2 {
+    width: 360px;
+    height: 134.004px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pp {
+    color: #FBFBFB;
+    font-family: Lato;
+    font-size: 19.96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 25.06px;
+}
+
+.ppp {
+    width: 360px;
+    height: 34px;
+    color: #FBFBFB;
+    text-align: center;
+    font-family: Lato;
+    font-size: 13.972px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-top: 16.01px;
+}
+
+.boo {
+    background: rgba(244, 244, 244, 0.70);
+    width: 1598.001px;
+    height: 448px;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.boo1 {
+    background: url(../Images/Layer\ 41.png), lightgray 0px -169px / 100% 246.875% no-repeat;
+    width: 1600.001px;
+    height: 448px;
+    flex-shrink: 0;
+}
+
+.lala {
+    width: 557px;
+    height: 61px;
+    flex-shrink: 0;
+    padding-bottom: 32px;
+    display: flex;
+    padding-bottom: 32px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.girl {
+    margin: 97px 223.26px 126px 228.29px;
+    width: 359.449px;
+    height: 225px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.etre {
+    color: #222224;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.qui {
+    color: #222224;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.verb {
+    color: #222224;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.venir {
+    color: #222224;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.subscribe {
+    width: 557px;
+    height: 142px;
+    flex-shrink: 0;
+    margin: 150px 230px 156px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.SUBSCRIBE {
+    color: #222224;
+    text-align: center;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 167.2%;
+}
+
+.for {
+    color: #222224;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 167.2%;
+}
+
+.butrrr {
+    width: 356px;
+    height: 49px;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.em {
+    width: 256px;
+    height: 49px;
+    flex-shrink: 0;
+    border: none;
+    color: #222224;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.671;
+    text-align: start;
+    background: url(../Images/Rounded\ Rectangle\ 5.svg);
+}
+
+.rrrr {
+    background: url(../Images/Rounded\ Rectangle\ 5\ copy.png);
+    width: 100px;
+    height: 49px;
+    flex-shrink: 0;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.div {
+    width: 1600px;
+    height: 79px;
+    flex-shrink: 0;
+}
+
 @media(min-width: 768px) and (max-width: 1024px) {
     html {
         width: 768px;
