@@ -13,6 +13,12 @@ html {
   background: #F1E4E6;
 }
 
+.background1 {
+  flex-shrink: 0;
+  background: #F1E4E6;
+  display: flex;
+}
+
 .texts_o {
   font-family: Lato;
   font-size: 24px;
@@ -242,6 +248,102 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+}
+
+.texts_1 {
+  margin: 0px 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  row-gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.filter {
+  display: block;
+}
+
+.filter_filter {
+  padding-right: 7px;
+  color: rgb(0, 0, 0);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  text-align: left;
+}
+
+.filter::after {
+  content: url(../Images/filterrrr.svg);
+}
+
+.fil3 {
+  display: block;
+}
+
+.filter_filter3 {
+  padding-right: 7px;
+  color: rgb(111, 110, 110);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+}
+
+.fil3::after {
+  content: url(../Images/TrendingNow.svg);
+}
+
+.filter3 {
+  display: flex;
+  gap: 20px;
+}
+
+.content_catalog {
+  display: flex;
+  gap: 600px;
+  margin: 0px 40px 50px 40px;
+}
+
+.filter_details[open] {
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+  background: rgb(255, 255, 255);
+}
+
+.details_label_sizes[open] {
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+  background: rgb(255, 255, 255);
+}
+
+.details_label_sizes_span {
+  position: absolute;
+}
+
+.label_sizes {
+  padding-top: 3px;
+  color: rgb(111, 110, 110);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  width: 79px;
+  position: absolute;
+  background: rgb(255, 255, 255);
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+}
+
+.label_sizes_more {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .texts {
