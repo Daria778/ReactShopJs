@@ -26,7 +26,7 @@ html {
   line-height: 29px;
   letter-spacing: 0em;
   text-align: left;
-  color: rgb(241, 109, 127);
+  color: rgb(239, 91, 112);
 }
 
 .laslas {
@@ -43,7 +43,7 @@ html {
 }
 
 .laslas_womancoll {
-  color: rgb(241, 109, 127);
+  color: rgb(239, 91, 112);
   font-family: Lato;
   font-size: 14px;
   font-weight: 300;
@@ -81,7 +81,7 @@ html {
 
 .addddddddddtoca {
   display: flex;
-  border: 1px solid rgb(255, 106, 106);
+  border: 1px solid rgb(239, 91, 112);
   width: 211px;
   height: 47.4px;
   justify-content: space-around;
@@ -89,7 +89,7 @@ html {
 }
 
 .lkjkjkjjnk {
-  color: rgb(242, 99, 118);
+  color: rgb(239, 91, 112);
   font-family: Lato;
   font-size: 16px;
   font-weight: 400;
@@ -137,7 +137,7 @@ html {
   line-height: 29px;
   letter-spacing: 0em;
   text-align: left;
-  color: rgb(241, 109, 127);
+  color: rgb(239, 91, 112);
 }
 
 .rectangle {
@@ -308,18 +308,32 @@ html {
   margin: 0px 40px 50px 40px;
 }
 
-.filter_details[open] {
+.filter__details[open] {
   box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
   background: rgb(255, 255, 255);
+}
+.filter__details[open] .filter {
+  color: rgb(239, 91, 112);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+}
+
+.CATEGORY__sum {
+  display: block;
+  color: rgb(111, 110, 110);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
 }
 
 .details_label_sizes[open] {
   box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
   background: rgb(255, 255, 255);
-}
-
-.details_label_sizes_span {
-  position: absolute;
 }
 
 .label_sizes {
@@ -383,7 +397,7 @@ html {
 }
 
 .text2 {
-  color: #F16D7F;
+  color: rgb(239, 91, 112);
   font-family: Lato;
   font-size: 32px;
   font-style: normal;
@@ -488,7 +502,7 @@ html {
 }
 
 .w1 {
-  color: #F16D7F;
+  color: rgb(239, 91, 112);
   font-family: Lato;
   font-size: 24px;
   font-style: normal;
@@ -551,7 +565,7 @@ html {
 
 .lastS {
   width: 52.457px;
-  color: #F16D7F;
+  color: rgb(239, 91, 112);
   font-family: Lato;
   font-size: 16px;
   font-style: normal;
@@ -617,7 +631,7 @@ html {
 }
 
 .lastB {
-  color: #F26376;
+  color: rgb(239, 91, 112);
   font-family: Lato;
   font-size: 16px;
   font-style: normal;
