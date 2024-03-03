@@ -1,5 +1,5 @@
 $color__pink: rgb(239, 91, 112);
-
+$font: Lato;
 
 * {
     margin: 0;
@@ -23,11 +23,10 @@ html {
 }
 
 .texts_o {
-    font-family: Lato;
+    font-family: $font;
     font-size: 24px;
     font-weight: 400;
     line-height: 29px;
-    letter-spacing: 0em;
     text-align: left;
     color: $color__pink;
 }
@@ -47,7 +46,7 @@ html {
 
 .laslas_womancoll {
     color: $color__pink;
-    font-family: Lato;
+    font-family: $font;
     font-size: 14px;
     font-weight: 300;
     line-height: 17px;
@@ -57,7 +56,7 @@ html {
 
 .Compellingly {
     color: rgb(94, 94, 94);
-    font-family: Lato;
+    font-family: $font;
     font-size: 14px;
     font-weight: 300;
     line-height: 17px;
@@ -75,7 +74,7 @@ html {
 
 .sortttttt {
     color: rgb(111, 110, 110);
-    font-family: Lato;
+    font-family: $font;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -94,7 +93,7 @@ html {
 
 .lkjkjkjjnk {
     color: $color__pink;
-    font-family: Lato;
+    font-family: $font;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -103,7 +102,7 @@ html {
 
 .dollar {
     color: $color__pink;
-    font-family: Lato;
+    font-family: $font;
     font-size: 24px;
     font-weight: 300;
     line-height: 29px;
@@ -113,7 +112,7 @@ html {
 
 .laslas_MOSCHINO_CHEAP_AND_CHic {
     color: rgb(77, 77, 77);
-    font-family: Lato;
+    font-family: $font;
     font-size: 18px;
     font-weight: 300;
     line-height: 22px;
@@ -125,7 +124,7 @@ html {
 
 
 .texts_i {
-    font-family: Lato;
+    font-family: $font;
     font-size: 24px;
     font-weight: 400;
     line-height: 29px;
@@ -138,7 +137,7 @@ html {
 }
 
 .pooooopopop {
-    font-family: Lato;
+    font-family: $font;
     font-size: 24px;
     font-weight: 400;
     line-height: 29px;
@@ -191,7 +190,7 @@ html {
     height: 19px;
     flex-shrink: 0;
     color: #FFF;
-    font-family: Lato;
+    font-family: $font;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -276,19 +275,17 @@ html {
 
 }
 
-.filter_filter {
+.filter__filter {
     padding-right: 7px;
     color: rgb(0, 0, 0);
-    font-family: Lato;
+    font-family: $font;
     font-size: 14px;
     font-weight: 600;
     line-height: 17px;
     text-align: left;
 }
 
-.filter::after {
-    content: url(../Images/filterrrr.svg);
-}
+
 
 .fil3 {
     display: block;
@@ -297,7 +294,7 @@ html {
 .filter_filter3 {
     padding-right: 7px;
     color: rgb(111, 110, 110);
-    font-family: Lato;
+    font-family: $font;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -316,46 +313,50 @@ html {
 .content_catalog {
     display: flex;
     gap: 600px;
-    margin: 0px 40px 50px 40px;
+    margin: 0px 40px 50px;
+    position: relative;
+    align-items: center;
+}
+
+.filter__content {
+    margin-top: 16px;
 }
 
 .filter__details {
+    width: 360px;
+    box-sizing: border-box;
+    position: absolute;
+    padding: 13px 16px 16px;
+
     &[open] {
         box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
         background: rgb(255, 255, 255);
 
-        .filter {
+        .filter__filter {
             color: $color__pink;
-            font-family: Lato;
+            font-family: $font;
             font-size: 14px;
             font-weight: 400;
             line-height: 17px;
             text-align: left;
         }
+    }
+
+    &[open] path {
+        fill: $color__pink;
     }
 }
 
 
 
 .CATEGORY {
+    margin-top: 16px;
+    padding-left: 10px;
+
     &__sum {
         display: block;
         color: rgb(111, 110, 110);
-        font-family: Lato;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 17px;
-        text-align: left;
-    }
-
-    &__links-box {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__link {
-        color: rgb(111, 110, 110);
-        font-family: Lato;
+        font-family: $font;
         font-size: 14px;
         font-weight: 400;
         line-height: 17px;
@@ -363,28 +364,43 @@ html {
     }
 
     &[open] {
-        &__sum {
+        .CATEGORY__sum {
             display: block;
             color: $color__pink;
-            font-family: Lato;
+            font-family: $font;
             font-size: 14px;
             font-weight: 400;
             line-height: 17px;
-            letter-spacing: 0%;
             text-align: left;
+            border-bottom: 1px solid rgb(235, 235, 235);
+            border-left: 5px solid $color__pink;
+            padding: 8px 11px 11px 11px;
         }
     }
-
-
 }
 
 
-.details_label_sizes {
-    &[open] {
-        box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
-        background: rgb(255, 255, 255);
-    }
 
+
+
+
+
+
+.llllllljklkj {
+    color: rgb(111, 110, 110);
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+}
+
+.CATEGORY__links-box {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    padding-left: 10px;
+    padding-top: 16px;
 }
 
 
@@ -433,7 +449,7 @@ html {
 
 .text {
     color: #222;
-    font-family: Lato;
+    font-family: $font;
     font-size: 48px;
     font-style: normal;
     font-weight: 900;
@@ -442,7 +458,7 @@ html {
 
 .text1 {
     color: #222;
-    font-family: Lato;
+    font-family: $font;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -451,7 +467,7 @@ html {
 
 .text2 {
     color: $color__pink;
-    font-family: Lato;
+    font-family: $font;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -547,7 +563,7 @@ html {
 .women {
     color: #FFF;
     text-align: center;
-    font-family: Lato;
+    font-family: $font;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -556,7 +572,7 @@ html {
 
 .w1 {
     color: $color__pink;
-    font-family: Lato;
+    font-family: $font;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -573,7 +589,7 @@ html {
 
 .pol {
     color: #222;
-    font-family: Lato;
+    font-family: $font;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -582,7 +598,7 @@ html {
 
 .popo {
     color: #9F9F9F;
-    font-family: Lato;
+    font-family: $font;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -599,7 +615,7 @@ html {
 .lastH {
     width: 148.9px;
     color: #000;
-    font-family: Lato;
+    font-family: $font;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -609,7 +625,7 @@ html {
 .lastP {
     width: 314.743px;
     color: #5D5D5D;
-    font-family: Lato;
+    font-family: $font;
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
@@ -619,7 +635,7 @@ html {
 .lastS {
     width: 52.457px;
     color: $color__pink;
-    font-family: Lato;
+    font-family: $font;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -668,7 +684,7 @@ html {
 
 .i {
     color: #FFF;
-    font-family: Lato;
+    font-family: $font;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -685,7 +701,7 @@ html {
 
 .lastB {
     color: $color__pink;
-    font-family: Lato;
+    font-family: $font;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -745,7 +761,7 @@ footer {
 
 .pp {
     color: #FBFBFB;
-    font-family: Lato;
+    font-family: $font;
     font-size: 19.96px;
     font-style: normal;
     font-weight: 400;
@@ -758,7 +774,7 @@ footer {
     height: 34px;
     color: #FBFBFB;
     text-align: center;
-    font-family: Lato;
+    font-family: $font;
     font-size: 13.972px;
     font-style: normal;
     font-weight: 300;
@@ -808,7 +824,7 @@ footer {
 
 .etre {
     color: #222224;
-    font-family: Lato;
+    font-family: $font;
     font-size: 20px;
     font-style: italic;
     font-weight: 400;
@@ -819,7 +835,7 @@ footer {
 .qui {
     color: #222224;
     text-align: center;
-    font-family: Lato;
+    font-family: $font;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -829,7 +845,7 @@ footer {
 .verb {
     color: #222224;
     display: flex;
-    font-family: Lato;
+    font-family: $font;
     font-size: 20px;
     font-style: italic;
     font-weight: 400;
@@ -842,7 +858,7 @@ footer {
 .venir {
     color: #222224;
     text-align: center;
-    font-family: Lato;
+    font-family: $font;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -863,7 +879,7 @@ footer {
 .SUBSCRIBE {
     color: #222224;
     text-align: center;
-    font-family: Lato;
+    font-family: $font;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -872,7 +888,7 @@ footer {
 
 .for {
     color: #222224;
-    font-family: Lato;
+    font-family: $font;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -892,7 +908,7 @@ footer {
     flex-shrink: 0;
     border: none;
     color: #222224;
-    font-family: Lato;
+    font-family: $font;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -930,7 +946,7 @@ footer {
 .l {
     width: 332px;
     color: #FBFBFB;
-    font-family: Lato;
+    font-family: $font;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
