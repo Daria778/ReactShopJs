@@ -6,6 +6,10 @@ $font: Lato;
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 html {
     width: 1600px;
     height: 2925px;
@@ -42,6 +46,27 @@ html {
     align-items: center;
     justify-content: space-around;
     border: 1px solid rgb(234, 234, 234);
+}
+
+.nav {
+    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+    background: rgb(255, 255, 255);
+    width: 232px;
+    padding: 32px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 75.2px;
+    right: 0px;
+    transition: right .3s;
+}
+
+#but1:checked~.nav {
+    right: -232px;
+}
+
+#but1 {
+    position: absolute;
+    visibility: hidden;
 }
 
 .laslas_womancoll {
@@ -163,6 +188,7 @@ html {
     background: #222;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .buttons {
@@ -250,6 +276,171 @@ html {
     display: flex;
     border: none;
     align-items: center;
+}
+
+
+.firstProuct {
+    width: 652px;
+    border: 1px solid rgb(234, 234, 234);
+    box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
+    display: flex;
+    position: relative;
+    margin-top: 96px;
+    margin-left: 230px;
+}
+
+.krestic {
+    position: absolute;
+    right: 22px;
+    top: 28px;
+    border: none;
+    background: none;
+}
+
+.shoppingcartbuttonCART {
+    color: rgb(0, 0, 0);
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: center;
+    border: 1px solid rgb(164, 164, 164);
+    background: none;
+    width: 235px;
+    height: 50px;
+}
+
+.shoppingcartbuttonCART:hover {
+    color: white;
+    border: none;
+    background-color: $color__pink;
+}
+
+.totalAmount {
+    color: rgb(74, 74, 74);
+    font-family: $font;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    text-align: left;
+    padding-left: 153px;
+}
+
+.ProceedTo {
+    width: 273px;
+    height: 50px;
+    background-color: $color__pink;
+    color: rgb(255, 255, 255);
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    padding-left: 10px;
+    border: none;
+}
+
+.GrandTotal {
+    font-family: $font;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 87px;
+}
+
+.ProceedTo:hover {
+    background-color: none;
+    color: rgb(0, 0, 0);
+}
+
+.checkmoney {
+    width: 360px;
+    background: rgb(245, 243, 243);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 214px;
+    justify-content: space-evenly;
+}
+
+.SHOPPINGADRRES {
+    color: rgb(34, 34, 34);
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.shopingcartbuttons {
+    display: flex;
+    gap: 192px;
+    margin-left: 226px;
+    margin-top: 72px;
+}
+
+.Forms {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 100px;
+}
+
+.formsInput {
+    width: 360px;
+    height: 45px;
+    border: 1px solid rgb(164, 164, 164);
+    color: rgb(34, 34, 34);
+    font-family: $font;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    padding-left: 16px;
+}
+
+.shoping_cart_content {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shoping_cart {
+    display: flex;
+    gap: 128px;
+}
+
+.firstProductText {
+    width: 262px;
+    margin: 22px 97px 62px 31px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.firstProductTextMango {
+    color: rgb(34, 34, 34);
+    font-family: $font;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+}
+
+.firstProductTextPRICE {
+    font-family: $font;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: rgb(111, 110, 110);
+}
+
+.firstProductTextPRICECorrect {
+    font-family: $font;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    color: $color__pink;
+    text-align: left;
 }
 
 .text0 {
