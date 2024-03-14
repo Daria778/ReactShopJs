@@ -329,6 +329,126 @@ html {
   border: none;
 }
 
+.REGISTRATIONFORMS {
+  width: 360px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-left: 230px;
+  margin-top: 20px;
+  margin-bottom: 33px;
+}
+
+.registrationsOnline {
+  margin-top: 33px;
+  margin-left: 230px;
+  margin-bottom: 35px;
+  color: rgb(0, 0, 0);
+  font-family: Lato;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 13px;
+  gap: 10px;
+  text-align: left;
+  display: flex;
+}
+
+.passwordknowledges {
+  color: rgb(177, 177, 177);
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 55px;
+  margin-left: 230px;
+  width: 359px;
+}
+
+.JOINNOW {
+  background-color: rgb(239, 91, 112);
+  color: rgb(255, 255, 255);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  border: none;
+  width: 167px;
+  height: 50px;
+  margin-left: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BODY {
+  display: flex;
+  gap: 128px;
+}
+
+.Pluses {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 62px;
+}
+
+.GETINON {
+  color: rgb(0, 0, 0);
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  text-align: left;
+  width: 652px;
+  height: 58px;
+}
+
+.Gugo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.LOYALTYHAS {
+  color: rgb(0, 0, 0);
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  text-align: left;
+}
+
+.Reg {
+  color: rgb(239, 91, 112);
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: left;
+  padding-left: 230px;
+}
+
+.shoppingcartlflf {
+  background: rgb(248, 243, 244);
+  width: 1600px;
+  height: 148px;
+  display: flex;
+  align-items: center;
+}
+
+.YOURNAME {
+  color: rgb(34, 34, 34);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  text-align: left;
+  margin-top: 64px;
+  margin-left: 231px;
+}
+
 .GrandTotal {
   font-family: Lato;
   font-size: 16px;
