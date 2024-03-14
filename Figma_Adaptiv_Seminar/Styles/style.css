@@ -146,7 +146,6 @@ html {
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
-  letter-spacing: 0em;
   text-align: left;
   color: rgb(99, 99, 99);
   display: flex;
@@ -380,6 +379,15 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 96px;
+}
+
+.JOINNOW:hover {
+  background-color: none;
+  color: rgb(0, 0, 0);
+}
+.JOINNOW:hover path {
+  fill: rgb(0, 0, 0);
 }
 
 .BODY {
