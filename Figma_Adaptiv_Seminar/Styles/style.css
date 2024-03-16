@@ -1403,6 +1403,85 @@ footer {
   .div {
     width: 768px;
   }
+  .texts_1 {
+    width: 768px;
+    height: 148px;
+    margin: 0px;
+    justify-content: space-around;
+  }
+  .content_catalog {
+    gap: 370px;
+  }
+  .laslas {
+    position: unset;
+    width: 768px;
+    height: 601px;
+    margin: 376px 0px 0px 0px;
+  }
+  .vd {
+    width: 768px;
+    height: 624px;
+    padding-top: 55px;
+  }
+  .kjkjk {
+    margin-left: 353px;
+    gap: 16px;
+    margin-top: 307px;
+  }
+  .firstProuct {
+    margin-left: 16px;
+    width: 734px;
+    margin-right: 16px;
+  }
+  .shoping_cart {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .shopingcartbuttons {
+    margin-left: 93px;
+    gap: 48px;
+  }
+  .Forms {
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 128px;
+    margin-left: 17px;
+    margin-right: 17px;
+  }
+  .formsDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+  .formsInput {
+    width: 300px;
+  }
+  .BODY {
+    gap: 22px;
+  }
+  .REGISTRATIONFORMS {
+    margin-left: 16px;
+  }
+  .registrationsOnline {
+    margin-left: 16px;
+  }
+  .YOURNAME {
+    margin-left: 16px;
+  }
+  .JOINNOW {
+    margin-left: 16px;
+  }
+  .passwordknowledges {
+    margin-left: 16px;
+  }
+  .GETINON {
+    font-size: 16px;
+    width: 354px;
+  }
+  .Gugo {
+    gap: 22px;
+  }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   html {
