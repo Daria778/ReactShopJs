@@ -413,6 +413,17 @@ html {
   height: 58px;
 }
 
+.GeTTION1 {
+  color: rgb(0, 0, 0);
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  text-align: left;
+  width: 652px;
+  height: 58px;
+}
+
 .Gugo {
   display: flex;
   flex-direction: column;
@@ -1475,6 +1486,10 @@ footer {
   .passwordknowledges {
     margin-left: 16px;
   }
+  .GeTTION1 {
+    font-size: 16px;
+    width: 354px;
+  }
   .GETINON {
     font-size: 16px;
     width: 354px;
@@ -1649,5 +1664,120 @@ footer {
   }
   .ppppppp {
     width: 251px;
+  }
+  .texts_1 {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .texts_i {
+    font-size: 14px;
+  }
+  .pooooopopop {
+    font-size: 14px;
+  }
+  .filter__details {
+    margin-left: -92px;
+    padding: unset;
+  }
+  .hilhilh {
+    width: 37.5px;
+    height: 25px;
+    margin-left: 20px;
+  }
+  .content_catalog {
+    gap: 61.5px;
+    align-items: flex-start;
+  }
+  .filter__content {
+    margin-left: 70px;
+  }
+  .vd {
+    content: url(../Images/lkiurs.svg);
+  }
+  .laslas {
+    width: 375px;
+    height: 600px;
+    position: unset;
+    margin: 264px 0px 0px;
+  }
+  .iiea {
+    justify-content: space-evenly;
+  }
+  .kjkjk {
+    margin-top: 64px;
+  }
+  .shoping_cart {
+    flex-direction: column;
+    gap: unset;
+  }
+  .firstProuct {
+    margin-left: 5px;
+    width: 358px;
+    height: 188px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .firstProductText {
+    width: 143.86px;
+    position: absolute;
+    margin: 13px 53px 37px 170px;
+  }
+  .firstProductTextMango {
+    font-size: 16px;
+  }
+  .firstProductTextPRICE {
+    font-size: 14px;
+  }
+  .firstProductTextPRICECorrect {
+    font-size: 14px;
+  }
+  .ooooomaaan {
+    height: 188px;
+  }
+  .shopingcartbuttons {
+    gap: 10px;
+    margin-left: 5px;
+  }
+  .Forms {
+    margin-left: 5px;
+  }
+  .formsInput {
+    width: 350px;
+    padding-left: 10px;
+  }
+  .Reg {
+    padding-left: unset;
+    margin-left: 102px;
+  }
+  .BODY {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .YOURNAME {
+    margin-left: 5px;
+  }
+  .REGISTRATIONFORMS {
+    margin-left: 5px;
+  }
+  .registrationsOnline {
+    margin-left: 5px;
+  }
+  .passwordknowledges {
+    margin-left: 5px;
+  }
+  .JOINNOW {
+    margin-left: 5px;
+  }
+  .LOYALTYHAS {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .GETINON {
+    font-size: 16px;
+    width: 358px;
+  }
+  .GeTTION1 {
+    padding-bottom: 10px;
+    width: 355px;
   }
 }/*# sourceMappingURL=style.css.map */
