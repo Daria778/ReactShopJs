@@ -1,9 +1,11 @@
 import { useDispatch, useSelector, useState } from "react-redux"
 import './style/StylesFor.css'
-const Card = ({ name, desc, price, img, c }) => {
-
+import { adding, AddProductToCart } from "./store/CardSlicer";
+const Card = ({ name, desc, price, pic, c }) => {
+    const dispatch = useDispatch();
     const AddProduct = () => {
-        console.log("object");
+        adding(price)
+        dispatch(AddProductToCart(name, desc, price, pic))
     }
 
     return (
@@ -11,15 +13,15 @@ const Card = ({ name, desc, price, img, c }) => {
             <div className="img">
                 <div className="y" onClick={AddProduct}>
                     <div className="z">
-                        <img src={img} alt="фотка"></img>
-                        <button className="i" onClick={AddProduct}>Add to Cart</button>
+                        <img src={pic} alt=""></img>
+                        <button className="i">Add to Cart</button>
                     </div>
                 </div>
             </div>
             <div className="lastSeen" key={c}>
                 <p className="lastH">{name}</p>
                 <p className="lastP">{desc}</p>
-                <p className="lastS">{price}</p>
+                <p className="lastS">${price}</p>
             </div>
 
 

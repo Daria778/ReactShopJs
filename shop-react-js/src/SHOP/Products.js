@@ -1,12 +1,14 @@
 import Card from "./Card"
+import { Link } from "react-router-dom"
 import { productData } from "./dataPr";
+import { adding, count, getTotalPice } from "./store/CardSlicer";
 
 const Products = () => {
     let counter = 0
     const products = JSON.parse(productData);
     //нужно фетчить данные РАЗОБРАТЬСЯ!!!!!
 
-    return (<div>
+    return (<div className="products">
         <header className="header">
             <div className="buttons">
                 <button className="button"><img src={require("./style/Images/Group 2.png")} alt=""></img>
@@ -16,7 +18,7 @@ const Products = () => {
             </div>
             <div className="buts">
                 <div className="burger">
-                    <label for="but1"><img src={require("./style/Images/Forma 1.png")} alt=""></img>
+                    <label htmlFor="but1"><img src={require("./style/Images/Forma 1.png")} alt=""></img>
                     </label>
                     <input type="checkbox" id="but1"></input>
                     <nav className="nav">
@@ -32,7 +34,7 @@ const Products = () => {
 
                 <div className="piu">
                     <button className="but3"><img src={require("./style/Images/Forma 1 (3).png")} alt=""></img></button>
-                    <button className="button2">5</button>
+                    <Link className="button2" to={"/productCart"} ></Link>
                 </div>
             </div>
 
@@ -55,7 +57,7 @@ const Products = () => {
                         <defs />
                         <path id="Vector"
                             d="M0.833252 10L4.16675 10C4.625 10 5 9.625 5 9.16675C5 8.70825 4.625 8.33325 4.16675 8.33325L0.833252 8.33325C0.375 8.33325 0 8.70825 0 9.16675C0 9.625 0.375 10 0.833252 10ZM0 0.833252C0 1.29175 0.375 1.66675 0.833252 1.66675L14.1667 1.66675C14.625 1.66675 15 1.29175 15 0.833252C15 0.375 14.625 0 14.1667 0L0.833252 0C0.375 0 0 0.375 0 0.833252ZM0.833252 5.83325L9.16675 5.83325C9.625 5.83325 10 5.45825 10 5C10 4.54175 9.625 4.16675 9.16675 4.16675L0.833252 4.16675C0.375 4.16675 0 4.54175 0 5C0 5.45825 0.375 5.83325 0.833252 5.83325Z"
-                            fill="#000000" fill-opacity="1.000000" fill-rule="nonzero" />
+                            fill="#000000" fillOpacity="1.000000" fillRule="nonzero" />
                     </svg></summary>
                     <div className="filter__content">
                         <details className="CATEGORY">
@@ -108,7 +110,7 @@ const Products = () => {
             </div>
         </div>
         {products.map((product, count) => {
-            return <Card name={product.name} desc={product.desc} price={product.parse} img={product.img} key={count += (counter += 1)} />
+            return <Card name={product.name} desc={product.desc} price={product.price} pic={product.pic} key={count += (counter += 1)} />
         })}
         <button className="lastB">
             Browse All Product
