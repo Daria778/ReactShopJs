@@ -5,9 +5,27 @@ import { adding, count, getTotalPice } from "./store/CardSlicer";
 
 const Products = () => {
     let counter = 0
-    const products = JSON.parse(productData);
-    //нужно фетчить данные РАЗОБРАТЬСЯ!!!!!
+    const products = JSON.parse(productData); //нужно фетчить данные РАЗОБРАТЬСЯ!!!!!
+    const deleteF = () => {
+        {
+            products.filter((product, count) => {
+                if (product.size != "S") {
+                    return <Card name={product.name} desc={product.desc} price={product.price} pic={product.pic} key={count += (counter += 1)} />
+                }
+            })
+        }
+    }
 
+    const deleteM = () => {
+        {
+            products.filter((product, count) => {
+                if (product.size != "M") {
+                    return <div><Card name={product.name} desc={product.desc} price={product.price} pic={product.pic} key={count += (counter += 1)} />
+                    </div>
+                }
+            })
+        }
+    }
     return (<div className="products">
         <header className="header">
             <div className="buttons">
@@ -95,10 +113,8 @@ const Products = () => {
                     <summary className="fil3"><span className="filter_filter3">Size</span></summary>
                     <span className="label_sizes">
                         <div className="label_sizes_more">
-                            <label><input type="checkbox"></input>XS</label>
-                            <label><input type="checkbox"></input>S</label>
-                            <label><input type="checkbox"></input>M</label>
-                            <label><input type="checkbox"></input>L</label>
+                            <label><input type="checkbox" onChange={deleteM}></input>S</label>
+                            <label><input type="checkbox" onChange={deleteF}></input>M</label>
                         </div>
                     </span>
 
