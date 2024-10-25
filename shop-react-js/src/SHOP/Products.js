@@ -2,30 +2,30 @@ import Card from "./Card"
 import { Link } from "react-router-dom"
 import { productData } from "./dataPr";
 import { adding, count, getTotalPice } from "./store/CardSlicer";
+import { useState } from "react";
 
 const Products = () => {
     let counter = 0
     const products = JSON.parse(productData); //нужно фетчить данные РАЗОБРАТЬСЯ!!!!!
-    const deleteF = () => {
-        {
-            products.filter((product, count) => {
-                if (product.size != "S") {
-                    return <Card name={product.name} desc={product.desc} price={product.price} pic={product.pic} key={count += (counter += 1)} />
-                }
-            })
-        }
-    }
+    const [selectedSizes, setSelectedSizes] = useState([]);
 
-    const deleteM = () => {
-        {
-            products.filter((product, count) => {
-                if (product.size != "M") {
-                    return <div><Card name={product.name} desc={product.desc} price={product.price} pic={product.pic} key={count += (counter += 1)} />
-                    </div>
-                }
-            })
+    const handleSizeChange = (size) => {
+        if (selectedSizes.includes(size)) {
+            setSelectedSizes(selectedSizes.filter((s) => s !== size));
+        } else {
+            setSelectedSizes([...selectedSizes, size]);
         }
-    }
+    };
+
+
+
+    const displayedProducts = (
+        (products.filter(
+            (product) => selectedSizes.length === 0 || selectedSizes.includes(product.size)
+        )
+        )
+    );
+
     return (<div className="products">
         <header className="header">
             <div className="buttons">
@@ -113,8 +113,10 @@ const Products = () => {
                     <summary className="fil3"><span className="filter_filter3">Size</span></summary>
                     <span className="label_sizes">
                         <div className="label_sizes_more">
-                            <label><input type="checkbox" onChange={deleteM}></input>S</label>
-                            <label><input type="checkbox" onChange={deleteF}></input>M</label>
+                            <label><input type="checkbox"
+                                onChange={() => handleSizeChange("M")}
+                                checked={selectedSizes.includes("M")}
+                            ></input>M</label>
                         </div>
                     </span>
 
@@ -125,7 +127,7 @@ const Products = () => {
                 </details>
             </div>
         </div>
-        {products.map((product, count) => {
+        {displayedProducts.map((product, count) => {
             return <Card name={product.name} desc={product.desc} price={product.price} pic={product.pic} key={count += (counter += 1)} />
         })}
         <button className="lastB">
