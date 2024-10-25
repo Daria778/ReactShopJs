@@ -128,7 +128,7 @@ const Products = () => {
             </div>
         </div>
         {displayedProducts.map((product, count) => {
-            return <Card name={product.name} desc={product.desc} price={product.price} pic={product.pic} key={count += (counter += 1)} />
+            return <Card name={product.name} size={product.size} desc={product.desc} price={product.price} pic={product.pic} key={count += (counter += 1)} />
         })}
         <button className="lastB">
             Browse All Product

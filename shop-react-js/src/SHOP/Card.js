@@ -1,11 +1,11 @@
 import { useDispatch, useSelector, useState } from "react-redux"
 import './style/StylesFor.css'
 import { adding, AddProductToCart } from "./store/CardSlicer";
-const Card = ({ name, desc, price, pic, c }) => {
+const Card = ({ name, desc, price, pic, c, size }) => {
     const dispatch = useDispatch();
     const AddProduct = () => {
         adding(price)
-        dispatch(AddProductToCart(name, desc, price, pic))
+        dispatch(AddProductToCart(name, desc, price, pic, size))
     }
 
     return (

@@ -1,3 +1,4 @@
+
 export const url = ("./dataPr.js")
 export const fetchingProducts = async () => {
     try {
@@ -29,12 +30,13 @@ export const getTotalPice = () => {
     }
     return t
 }
-export const AddProductToCart = ({ name, desc, price, img }) => ({
+export const AddProductToCart = ({ name, desc, price, img, size }) => ({
     type: addingAction,
     name: name,
     desc: desc,
     price: price,
-    img: img
+    img: img,
+    size: size
 })
 
 const initialStateCart = []
@@ -43,7 +45,7 @@ const initialStateCart = []
 export const cardReducer = (state = initialStateCart, action) => {
     switch (action.type) {
         case "ADD_A_PRODUCT":
-            return [...state, { name: action.name, desc: action.desc, price: action.price, img: action.img }]
+            return [...state, { name: action.name, desc: action.desc, price: action.price, img: action.img, size: action.size }]
         default:
             return state
     }

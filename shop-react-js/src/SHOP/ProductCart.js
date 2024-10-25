@@ -1,10 +1,14 @@
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
+import { count, totalPrice } from "./store/CardSlicer"
+import CardCart from "./CardCart"
 const ProductCart = () => {
+    let countInd = 0;
     const productStore = useSelector((state) => state)
     const y = () => {
-        console.log(productStore[0].price);
+        console.log(productStore);
     }
+
     return (
         <div>
             <header className="header">
@@ -37,9 +41,43 @@ const ProductCart = () => {
                 </div>
 
             </header>
+            <div className="shoppingcartlflf">
+                <p className="Reg">SHOPPING CART</p>
+            </div>
 
+            <div className="shoping_cart">
+                <div className="shoping_cart_content">
+                    {productStore.map((pr, count) => {
+                        return <CardCart name={pr.name} price={pr.price} size={pr.size} pic={pr.pic} key={count += (countInd += 2)} />
+                    })}
+                    <button className="krestic" ><img src={"./style/Images/krestic.svg"}></img></button>
+                </div>
+                <div className="shopingcartbuttons">
+                    <button className="shoppingcartbuttonCART">CLEAR SHOPPING CART</button>
+                    <button className="shoppingcartbuttonCART"><Link to={"/"}>CONTINUE SHOPPING </Link></button>
+                </div>
+            </div>
+            <div className="Forms">
+                <div className="formsDiv">
+                    <p className="SHOPPINGADRRES">SHOPPING ADRESS</p>
+                    <input className="formsInput" type="text" name="username" placeholder="Country"></input>
+                    <input className="formsInput" type="text" name="username" placeholder="State"></input>
+                    <input className="formsInput" type="text" name="username" placeholder="Post Code/Zip"></input>
+                    <input className="formsInput" type="text" name="username" placeholder="GET A QUOTE"></input>
 
+                </div>
+
+                <div className="checkmoney">
+
+                    <p className="totalAmount">SUB TOTAL {totalPrice}</p>
+                    <p className="GrandTotal">GRAND TOTAL <span className="firstProductTextPRICECorrect">${totalPrice}</span></p>
+
+                    <img src="../Figma_Adaptiv_Seminar/Images/lineshop.svg" alt=""></img>
+                    <button className="ProceedTo">PROCEED TO CHECKOUT</button>
+                </div>
+            </div>
         </div>
+
     )
 }
 export default ProductCart
