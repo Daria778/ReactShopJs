@@ -6,17 +6,9 @@ import { useState } from "react"
 const ProductCart = () => {
     let countInd = 0;
     const productStore = useSelector((state) => state)
-    const [deleteItem, setDelete] = useState()
     const y = () => {
         console.log(productStore);
     }
-
-    // const displayedProducts = (
-    //     (productStore.filter(
-    //         (product) => selectedSizes.length === 0 || selectedSizes.includes(product.size)
-    //     )
-    //     )
-    // );
 
     return (
         <div>
