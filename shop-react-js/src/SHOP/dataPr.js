@@ -1,6 +1,6 @@
 export const productData = `[
     {
-        "pic":"./style/Images/Rectangle 15 copy (1).png",
+        "pic":"./src/style/Images/Rectangle 15 copy (1).png",
         "size":"S",
         "name": "ELLERY X M'O CAPSULE",
         "desc": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teamsup with Moda Operandi.",
@@ -8,7 +8,7 @@ export const productData = `[
         "id":"1"
     },
     {
-        "pic":"./style/Images/Rectangle 15 copy (2).png",
+        "pic":"./src/style/Images/Rectangle 15 copy (2).png",
         "size":"M",
         "name": "ELLERY X M'O CAPSULE",
         "desc": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teamsup with Moda Operandi.",
@@ -16,7 +16,7 @@ export const productData = `[
         "id":"2"
     },
     {
-        "pic":"./style/Images/Rectangle 15 copy.jpg",
+        "pic":"./src/style/Images/Rectangle 15 copy.jpg",
         "size":"S",
         "name": "ELLERY X M'O CAPSULE",
         "desc": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teamsup with Moda Operandi.",
@@ -24,7 +24,7 @@ export const productData = `[
         "id":"3"
     },
     {
-        "pic":"./style/Images/Rectangle 15 copy.jpg",
+        "pic":"./src/style/Images/Rectangle 15 copy.jpg",
         "size":"M",
         "name": "ELLERY X M'O CAPSULE",
         "desc": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teamsup with Moda Operandi.",
@@ -32,7 +32,7 @@ export const productData = `[
         "id":"4"
     },
     {
-        "pic":"./style/Images/Rectangle 15 copy (6).png",
+        "pic":"./src/style/Images/Rectangle 15 copy (6).png",
         "size":"M",
         "name": "ELLERY X M'O CAPSULE",
         "desc": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teamsup with Moda Operandi.",
@@ -40,7 +40,7 @@ export const productData = `[
         "id":"5"
     },
     {
-        "pic":"./style/Images/Rectangle 15 copy (4).png",
+        "pic":"./src/style/Images/Rectangle 15 copy (4).png",
         "size":"S",
         "name": "ELLERY X M'O CAPSULE",
         "desc": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teamsup with Moda Operandi.",
