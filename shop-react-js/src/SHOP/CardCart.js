@@ -1,7 +1,12 @@
 import { useDispatch, useSelector, useState } from "react-redux"
+import { deleting } from "./store/CardSlicer";
 
-const CardCart = ({ name, size, price, pic, c }) => {
-
+const CardCart = ({ name, size, price, pic, c, id }) => {
+    const dispatch = useDispatch();
+    const handleDelete = (e) => {
+        dispatch(deleting(id))
+        console.log(e);
+    };
     return (
         <div className="firstProuct" key={c}>
             <img className="ooooomaaan" src={pic} alt=""></img>
@@ -11,7 +16,8 @@ const CardCart = ({ name, size, price, pic, c }) => {
                     Size: {size} <br></br>
                 </p>
             </div>
-            <button className="krestic"><img src="./style/Images/krestic.svg"></img></button>
+            <button className="krestic" onClick={handleDelete}><img src={require("./style/Images/krestic.svg")}></img></button>
+
         </div>
     )
 }

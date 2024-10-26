@@ -1,7 +1,7 @@
 import { useDispatch, useSelector, useState } from "react-redux"
 import './style/StylesFor.css'
 import { adding, AddProductToCart } from "./store/CardSlicer";
-const Card = ({ name, desc, price, pic, c, size }) => {
+const Card = ({ name, desc, price, pic, c, size, id }) => {
     const dispatch = useDispatch();
     const AddProduct = () => {
         adding(price)

@@ -50,10 +50,10 @@ const Products = () => {
                 </div>
                 <button className="but2"><img src={require("./style/Images/Forma 1 (1).png")} alt=""></img></button>
 
-                <div className="piu">
+                <Link className="piu" to={"/productCart"}>
                     <button className="but3"><img src={require("./style/Images/Forma 1 (3).png")} alt=""></img></button>
-                    <Link className="button2" to={"/productCart"} ></Link>
-                </div>
+                    <button className="button2"  ></button>
+                </Link>
             </div>
 
         </header>
@@ -128,7 +128,7 @@ const Products = () => {
             </div>
         </div>
         {displayedProducts.map((product, count) => {
-            return <Card name={product.name} size={product.size} desc={product.desc} price={product.price} pic={product.pic} key={count += (counter += 1)} />
+            return <Card name={product.name} id={product.id} size={product.size} desc={product.desc} price={product.price} pic={product.pic} key={count += (counter += 1)} />
         })}
         <button className="lastB">
             Browse All Product

@@ -2,12 +2,21 @@ import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import { count, totalPrice } from "./store/CardSlicer"
 import CardCart from "./CardCart"
+import { useState } from "react"
 const ProductCart = () => {
     let countInd = 0;
     const productStore = useSelector((state) => state)
+    const [deleteItem, setDelete] = useState()
     const y = () => {
         console.log(productStore);
     }
+
+    // const displayedProducts = (
+    //     (productStore.filter(
+    //         (product) => selectedSizes.length === 0 || selectedSizes.includes(product.size)
+    //     )
+    //     )
+    // );
 
     return (
         <div>
@@ -48,9 +57,8 @@ const ProductCart = () => {
             <div className="shoping_cart">
                 <div className="shoping_cart_content">
                     {productStore.map((pr, count) => {
-                        return <CardCart name={pr.name} price={pr.price} size={pr.size} pic={pr.pic} key={count += (countInd += 2)} />
+                        return <CardCart name={pr.name} id={pr.id} price={pr.price} size={pr.size} pic={pr.pic} key={count += (countInd += 2)} />
                     })}
-                    <button className="krestic" ><img src={"./style/Images/krestic.svg"}></img></button>
                 </div>
                 <div className="shopingcartbuttons">
                     <button className="shoppingcartbuttonCART">CLEAR SHOPPING CART</button>
